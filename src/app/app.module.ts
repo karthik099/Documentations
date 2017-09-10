@@ -3,12 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { JumbotronComponent } from './components/jombotron/jombotron.component';
+import { HomeComponent } from './components/pages/home.component';
+import { AboutComponent } from './components/pages/about.component';
+
+import { routing } from './app.routing';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, 
+    NavbarComponent, 
+    JumbotronComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, routing
   ],
   providers: [],
   bootstrap: [AppComponent]
